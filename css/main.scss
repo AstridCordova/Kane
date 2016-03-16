@@ -1,0 +1,478 @@
+@mixin cdr-pick {
+	height: 115px;
+    width: 153px;
+    text-align: center;
+    margin: 5px -2px;
+    display: inline-block;
+}
+
+body {
+	font-family: 'Roboto:100', sans-serif;
+}
+
+h2 {
+	font-size: 60px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.separador {
+	margin: 25px auto;
+    border: 1px solid;
+    width: 200px;
+}
+
+header {
+	background: #27AD60;
+	color: white;
+	ul {
+		padding: 2% 0%;	
+	}
+	img {
+		padding: 0% 0%;
+	}
+}
+
+.navbar-brand {
+	padding: 14%;
+}
+
+.navbar-inverse {
+	margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-toggle {
+	margin-top: 50px;
+	border-color: white;
+	&:hover {
+	background: rgba(255, 255, 255, 0.4);
+	}
+}
+
+#banner {
+	background: url(../img/carousel-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -85px;
+    color: white;
+    padding: 4.5% 13% 4% 13%;
+    h1 {
+    	font-size: 60px;
+    	font-weight: 400;
+    	margin-bottom: 5%;
+    }
+    p {
+    	font-size: 27px;
+    }
+}
+
+#palette {
+	padding: 3% 23%;
+	.separador {
+		margin-bottom: 80px;
+	}
+}
+
+.color-pick {
+	@include cdr-pick;
+}
+
+.uno {
+	background: #69D2E7;
+}
+
+.dos {
+	background: #A7DBDB;
+}
+
+.tres{
+	background: #E0E4CC;
+}
+
+.cuatro {
+	background: #F38630;
+}
+
+.cinco {
+	background: #FA6900;
+}
+
+.seis {
+	background: #E94C6F;
+}
+
+.siete {
+	background: #542733;
+}
+
+.ocho {
+	background: #5A6A62;
+}
+
+.nueve {
+	background: #C6D5CD;
+}
+
+.diez {
+	background: #FDF200;
+}
+
+.once {
+	background: #DB3340;
+}
+
+.doce {
+	background: #E8B71A;
+}
+
+.trece {
+	background: #F7EAC8;
+}
+
+.catorce {
+	background: #1FDA9A;
+}
+
+.quince {
+	background: #28ABE3;
+}
+
+.dieciseis {
+	background: #588C73;
+}
+
+.diecisiete {
+	background: #F2E394;
+}
+
+.dieciocho {
+	background: #F2A772;
+}
+
+.diecinueve {
+	background: #D96459;
+}
+
+.veinte{
+	background: #8C4646;
+}
+
+.veintiuno {
+	background: #D0C91F;
+}
+
+.veintidos {
+	background: #85C4B9;
+}
+
+.veintitres {
+	background: #008BBA;
+}
+
+.veinticuatro {
+	background: #DF514C;
+}
+
+.veinticinco {
+	background: #DC403B;
+}
+
+#about {
+	background: #2C3E50;
+    color: white;
+    padding: 6% 0%;	
+	span {
+		display: block;
+		margin-bottom: 15px;
+	}
+	img {
+		height: 400px;
+	}
+	.col-md-6 {
+		padding: 0px 50px;
+		margin-top: 50px;
+	}
+	p {
+		margin-bottom: 30px;
+	}
+}
+
+.progress {
+	background: #DCD5D5;
+	height: 12px;
+    padding: 2px;
+    margin-bottom: 3px;
+    border-radius: 0px;
+}
+
+#we-do {
+	background: #27AD60;
+	color: white;
+	padding: 7% 0%;
+	a {
+		display: inline-block;
+        padding: 0.7% 1.5%;
+        margin-left: 42%;
+        background: #443E44;
+        font-size: 16px;
+        
+	}
+}
+
+.item {
+	padding: 8% 5%;
+	margin: 6% 0%;
+	width: 80%;
+	hr {
+		display: none;
+	}
+	&:hover {
+		background: #2A7257;
+		padding-bottom: 0%;
+		h3 {
+			color: #A96931;
+		}
+		hr {
+			display: block;
+		}
+	}
+	h3 {
+		font-weight: 400;
+	}
+	p {
+		color: #DCD5D5;
+	}
+	img {
+		padding: 5%;
+		background-image: url(../img/icon-bg.png);
+		background-position-x: 50%;
+		background-color: #2C3E50;
+		&:hover {
+			background-image: none;
+			background-color: #A96931;
+			transform: rotate(40deg);
+			transition: 1s;
+		}
+	}
+}
+
+#team {
+	padding: 7% 0%;
+	background: #27AD60;
+	color: white;
+	h4 {
+		text-align: center;
+		font-weight: 400;
+	}
+	span {
+		display: block;
+        color: #2C3E50;
+        text-align: center;
+        margin-bottom: 7%;
+	}
+	p {
+		color: #DCD5D5;
+		text-align: center;
+	}
+	.fa {
+		color: #DCD5D5;
+        font-size: 17px;
+        margin-left: 2px;
+        text-align: center;
+	}
+	hr {
+		border-color: #DCD5D5;
+	}
+}
+
+.personal {
+	margin-top: 20%;
+	padding: 0% 12%;
+}
+
+#price {
+	background: #2C3E50;
+	color: white;
+	padding: 7% 0%;
+}
+
+.price {
+	color: #DCD5D5;
+	border: 2px solid #27AD60;
+	height: 520px;
+	margin-top: 20%;
+	a {
+		display: inline-block;
+		background: #443E44;
+		padding: 2%;
+		margin-top: 12%;
+	} 
+	p {
+		margin-bottom: 0px;
+	}
+	&:hover {
+		border-color: #8F5F38;
+		margin-top: 15%;
+	}	
+}
+
+.starter {
+		.encabezado {
+			background: #8F5F38;
+		}
+		.bg-blue {
+			background: #8F5F38;
+		}
+}
+
+.encabezado {
+	padding: 8%;
+    font-size: 18px;
+}
+
+.precio {
+	background: #27AD60;
+	color: white;
+	padding: 3%;
+    p {
+    	font-size: 50px;
+    }
+    span {
+    	font-size: 15px;
+    }
+}
+
+.bg-white {
+	background: white;
+	color: #2C3E50;
+	padding: 4%;
+}
+
+.bg-blue {
+	padding: 4%;
+}
+
+#clients {
+	background: #2C3E50;
+	color: white;
+	padding: 7% 9%;
+	p {
+		font-size: 17px;
+		width: 50%;
+        text-align: center;
+        margin: auto;
+	}
+}
+
+.text-clients {
+	margin-top: 5%;
+}
+
+.grey {
+	color: #D1D5D5;
+}
+
+.orange {
+	color: #8F5F38;
+}
+
+#form {
+	background: #2C3E50;
+	color: white;
+	padding: 7% 9%;
+	input {
+		width: 50%;
+		margin: 1% auto;
+		padding: 1%;
+	}
+	textarea {
+		width: 50%;
+		margin-left: 25%;
+		padding: 1%;
+		margin-bottom: 1%;
+		height: 180px;
+		color: #999999;
+	}
+	button {
+		display: block;
+        margin: auto;
+        border: none;
+        padding: 0.5% 2%;
+        background: #443E44;
+        color: white;
+        font-size: 17px;
+    }
+}
+
+.text-form {
+	margin-left: 25%;
+}
+
+#redes {
+	background: url(../img/img-divider-img.jpg);
+    background-repeat-y: 60%;
+    background-position-y: 372%;
+    color: white;
+    height: 450px;
+    padding-top: 13%
+}
+
+.box-redes {
+	background: url(../img/img-divider-img.jpg);
+	height: 405px;
+	padding: 7% 18%;
+	.fa {
+		font-size: 100px;
+        display: initial;
+        margin: 0px 20px
+	}
+}
+
+footer {
+	background: #27AD60;
+	color: white;
+	padding: 2% 0%;
+	margin-top: 9%;
+	h4 {
+		text-align: center;
+	}
+	span {
+		margin-right: 5px;
+	}
+	form {
+		border: 1px solid #443E44;
+		width: 80%;
+		margin: auto;
+		.fa {
+			padding: 4%;
+			margin-right: 0px;
+			color: #E77E21;
+			background: #443E44;
+		}
+	}
+	input {
+		height: 36px;
+        width: 85%;
+        padding: 0% 1%;
+	}
+	a {
+		padding: 2%;
+		margin: 4% auto;
+        background: #443E44;
+        display: block;
+        width: 32%;
+	}
+}
+
+.separador-little {
+	width: 60px;
+}
+
+.footer-grey {
+	color: #443E44;
+}
+
+.right {
+	float: right;
+}
